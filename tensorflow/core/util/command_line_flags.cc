@@ -17,6 +17,8 @@ limitations under the License.
 #include "tensorflow/core/lib/core/stringpiece.h"
 #include "tensorflow/core/platform/logging.h"
 
+#include <stdio.h>
+
 namespace tensorflow {
 namespace {
 
