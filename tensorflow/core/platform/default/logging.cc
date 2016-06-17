@@ -23,6 +23,7 @@ limitations under the License.
 #endif
 
 #include <stdlib.h>
+#include <stdio.h>
 
 namespace tensorflow {
 namespace internal {

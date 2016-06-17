@@ -25,6 +25,7 @@ limitations under the License.
 
 #include <assert.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 #include <vector>
 
