@@ -173,6 +173,18 @@ py_test(
 )
 
 py_test(
+    name = "sparsify_densify_test",
+    size = "small",
+    srcs = ["python/learn/tests/dataframe/sparsify_densify_test.py"],
+    srcs_version = "PY2AND3",
+    deps = [
+        ":learn",
+        "//tensorflow:tensorflow_py",
+        "//tensorflow/python:framework_test_lib",
+    ],
+)
+
+py_test(
     name = "tensorflow_dataframe_test",
     size = "small",
     srcs = ["python/learn/tests/dataframe/tensorflow_dataframe_test.py"],
@@ -238,6 +250,18 @@ py_test(
     name = "learn_runner_test",
     size = "small",
     srcs = ["python/learn/tests/learn_runner_test.py"],
+    srcs_version = "PY2AND3",
+    deps = [
+        ":learn",
+        "//tensorflow:tensorflow_py",
+        "//tensorflow/python:framework_test_lib",
+    ],
+)
+
+py_test(
+    name = "monitors_test",
+    size = "small",
+    srcs = ["python/learn/tests/monitors_test.py"],
     srcs_version = "PY2AND3",
     deps = [
         ":learn",
